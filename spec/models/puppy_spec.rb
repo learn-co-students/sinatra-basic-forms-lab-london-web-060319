@@ -4,7 +4,7 @@ describe 'Puppy class' do
     arity = Puppy.instance_method(:initialize).arity
     if arity == 1
       # assuming you want to instantiate a puppy with a hash
-      Puppy.new(name: "brad", breed: "black lab", months_old: 2)
+      Puppy.new(name: "brad", breed: "black lab", age: 2)
     elsif arity == 3
       # assuming you want to instantiate a puppy with three separate args
       Puppy.new("brad", "black lab", 2)
@@ -27,12 +27,12 @@ describe 'Puppy class' do
   end
 
   it 'can read a puppy age in months (puppy#months_old)' do
-    expect(puppy.months_old).to eq(2)
+    expect(puppy.age).to eq(2)
   end
 
   it 'can change puppy age in months (puppy#months_old=)' do 
-    puppy.months_old = 3
-    expect(puppy.months_old).to eq(3)
+    puppy.age = 3
+    expect(puppy.age).to eq(3)
   end
 
   it 'can change puppy name' do
