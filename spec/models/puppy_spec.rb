@@ -9,8 +9,7 @@ describe 'Puppy class' do
       # assuming you want to instantiate a puppy with three separate args
       Puppy.new("brad", "black lab", 2)
     else
-      # beyond that I can't help you
-      nil
+      # beyond that I can't help you      nil
     end
   }
 
@@ -30,7 +29,7 @@ describe 'Puppy class' do
     expect(puppy.months_old).to eq(2)
   end
 
-  it 'can change puppy age in months (puppy#months_old=)' do 
+  it 'can change puppy age in months (puppy#months_old=)' do
     puppy.months_old = 3
     expect(puppy.months_old).to eq(3)
   end
